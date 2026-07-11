@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+const { useState, useEffect } = React;
 
 // Constantes y Presets de la literatura clínica y radiobiológica
 const ALPHABETA_PRESETS = {
