@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RadBioCalc Pro</title>
+    <!-- Cargamos Tailwind CSS desde CDN para activar los estilos oscuros -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Cargamos React y Babel en vivo -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <div id="root"></div>
+
+    <!-- Enlazamos tu lógica clínica -->
+    <script type="text/babel" src="App.jsx"></script>
+
+    <script type="text/babel">
+      // Inyectamos el componente principal en el navegador
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+    </script>
+  </body>
+</html>
