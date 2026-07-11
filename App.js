@@ -145,7 +145,7 @@ const REIRRAD_OARS = {
   }
 };
 
-export default function App() {
+function App() {
   // Estado de navegación
   const [activeTab, setActiveTab] = useState('directo');
 
